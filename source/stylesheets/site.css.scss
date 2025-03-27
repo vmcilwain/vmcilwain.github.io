@@ -1,6 +1,7 @@
 :root {
   --body-color: #0d1b2a;
-  --text-color: #e0e1dd;
+  --text-color: #fff;
+  --text-off-white: #e0e1dd;;
   --nav-color: #415a77;
   --footer-color: #415a77;
   --accent-color1: #778da9;
@@ -85,8 +86,6 @@
   padding: 0;
   margin: 0;
 }
-
-/* Add separator between nav-list and slogan in desktop view */
 
 .slogan::before,
 .work-status::before {
@@ -195,7 +194,6 @@
   position: relative !important;
 }
 
-/* Add separator between nav-list and slogan in mobile view */
 .mobile-nav .slogan::before {
   content: "★" !important;
   display: block !important;
@@ -210,7 +208,6 @@
   margin: 10px 0 !important;
 }
 
-/* Add separator before work status in mobile view */
 .mobile-nav .work-status::before {
   content: "★" !important;
   display: block !important;
@@ -249,14 +246,14 @@
     justify-content: center;
     flex-wrap: wrap;
     .section {
-      border: 1px solid var(--accent-color1);
+      border: 1px solid var(--text-color);
       width: 500px;
       padding: 10px;
       .section-header {
         font-size: 20px;
         text-align: center;
         &.with-separator {
-          border-bottom: 1px solid var(--accent-color1);
+          border-bottom: 1px solid var(--text-color);
         }
       }
       .actions {
@@ -265,13 +262,13 @@
         .link {
           text-decoration: none;
           text-align: center;
-          border: 1px solid var(--accent-color1);
+          border: 1px solid var(--text-color);
           padding: 10px;
           width: 15em;
-          color: var(--accent-color1);
+          color: var(--text-color);
           &:hover {
             text-decoration: underline;
-            background: var(--accent-color1);
+            background: var(--text-color);
             color: var(--body-color);
           }
         }

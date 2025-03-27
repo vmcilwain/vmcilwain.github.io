@@ -1,3 +1,4 @@
+// This is where it all goes :)
 document.addEventListener("DOMContentLoaded", function () {
   const nav = document.querySelector(".nav");
   const hamburgerMenu = document.querySelector(".hamburger-menu");
