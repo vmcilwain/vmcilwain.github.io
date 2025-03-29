@@ -15,6 +15,10 @@ page '/*.txt', layout: false
 
 set :relative_links, true
 
+configure :build do
+  set :build_dir, 'docs'
+end
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 

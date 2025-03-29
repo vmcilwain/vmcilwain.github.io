@@ -1,3 +1,18 @@
 <footer class="footer">
-  <p>&copy; 2025 Lovell McIlwain. All rights reserved.</p>
+  <nav class="nav">
+    <div class="nav-content">
+      <p>&copy; 2025 Lovell McIlwain. All rights reserved.</p>
+      <ul class="nav-list">
+        <li class="nav-item">
+            <%= mail_to "mailto:lovell.mcilwain@gmail.com", "Contact Me", class: :link %>
+          </li>
+          <li class="nav-item">
+            <%= link_to :LinkedIn, "https://linkedin.com/in/vmcilwain", class: :link, target: "_blank" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to :Github, "https://github.com/vmcilwain", class: :link, target: "_blank" %>
+          </li>
+      </ul>
+    </div>
+  </nav>
 </footer>

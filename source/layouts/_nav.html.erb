@@ -13,16 +13,19 @@
     <ul class="nav-list">
       <li class="nav-item"><%= link_to :Home, "/index.html", class: :link, relative: true %></li>
       <li class="nav-item">
-        <%= link_to "Learn More", "/learn-more.html", class: :link, relative: true %>
+        <%= link_to "About Me", "/learn-more.html", class: :link, relative: true %>
       </li>
       <li class="nav-item">
-        <%= mail_to "mailto:lovell.mcilwain@gmail.com", "Contact Me", class: :link %>
+        <%= link_to :Resume, "/files/resume.pdf", class: :link, relative: true %>
       </li>
       <li class="nav-item">
-        <%= link_to :LinkedIn, "https://linkedin.com/in/vmcilwain", class: :link, target: "_blank" %>
+        <%= link_to "Work Example 1", "/files/ticket-system-overhaul-work-sample.pdf", class: :link %>
       </li>
       <li class="nav-item">
-        <%= link_to :Github, "https://github.com/vmcilwain", class: :link, target: "_blank" %>
+        <%= link_to "Work Example 2", "/files/updating-templates-confidently-with-ai-work-sample.pdf", class: :link %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "My Process", "/files/C-R-A-F-T-Process.pdf", class: :link, relative: true %>
       </li>
     </ul>
 

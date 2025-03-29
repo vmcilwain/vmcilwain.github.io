@@ -75,6 +75,7 @@
   font-family: "Dancing Script", Arial, Helvetica, sans-serif;
   font-size: 40px;
   flex: 1 1 auto;
+  max-width: 170px;
 }
 
 .nav-list,
@@ -259,6 +260,8 @@
       .actions {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
         .link {
           text-decoration: none;
           text-align: center;
