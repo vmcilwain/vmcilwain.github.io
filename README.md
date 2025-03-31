@@ -1,7 +1,5 @@
 # vmcilwain.github.io
 
--
-
 Professional site for use while job hunting.
 
 ## Dependencies
