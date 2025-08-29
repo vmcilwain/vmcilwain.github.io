@@ -1,143 +1,377 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Welcome to Lovel McIlwain</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Passion+One:wght@400;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+          crossorigin="anonymous">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com" />
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+          rel="stylesheet">
     <link href="/stylesheets/site.css" rel="stylesheet" />
     <script src="/javascripts/site.js"></script>
   </head>
   <body class="body">
-    <nav class="nav">
-  <div class="nav-top">
-    <button class="hamburger-menu" aria-label="Toggle menu">
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-    </button>
+    <nav class="navbar is-link is-fixed-top">
+  <div class="navbar-brand">
+    <div
+      class="navbar-burger burger"
+      data-target="navbarExampleTransparentExample"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 
-  <div class="nav-content">
-    <img src="/images/vell2-headshot.jpg" alt="Image of Lovell McIlwain" class="rounded-image" />
-    <p class="nav-title">Lovell McIlwain</p>
-    <ul class="nav-list">
-      <li class="nav-item"><a href="./" class="link">Home</a></li>
-      <li class="nav-item">
-        <a href="learn-more.html" class="link">About</a>
-      </li>
-      <li class="nav-item">
-        <a href="files/resume.pdf" class="link">Resume</a>
-      </li>
-      <li class="nav-item">
-        <a href="files/Reducing-Developer-Surprises-with-Intelligent-PR-Summaries.pdf" class="link" title="Reducing Developer Surprises with Intelligent PR Summaries">Example 1</a>
-      </li>
-      <li class="nav-item">
-        <a href="files/From-Support-Tickets-to-Self-Sufficiency-AI-Powered-Liquid-Template-Editing.pdf" class="link" title="From Support Tickets to Self Sufficiency: AI Powered Liquid Template Editing">Example 2</a>
-      </li>
-      <li class="nav-item">
-        <a href="files/Unifying-a-Fractured-Ticketing-Experience-From-Chaos-to-Cohesion.pdf" class="link" title="Unifying a Fractured Ticketing Experience: From Chaos to Cohesion">Example 3</a>
-      </li>
-      <li class="nav-item">
-        <a href="files/C-R-A-F-T-Process.pdf" class="link">My Process</a>
-      </li>
-    </ul>
-
-    <ul class="slogan">
-      <li class="list-item">Innovative</li>
-      <li class="list-item">Collaborative</li>
-      <li class="list-item">Adaptable</li>
-    </ul>
-
-    <p class="work-status">
-      Status: <span class="unemployed">#opentowork</span>
-    </p>
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-end">
+      <a class="navbar-item" href="#about">
+        <span class="icon">
+          <i class="fas fa-info"></i>
+        </span>
+        <span>About</span>
+      </a>
+      <a class="navbar-item" href="#services">
+        <span class="icon">
+          <i class="fas fa-bars"></i>
+        </span>
+        <span>Services</span>
+      </a>
+      <a class="navbar-item" href="#resume">
+        <span class="icon">
+          <i class="fas fa-file-alt"></i>
+        </span>
+        <span>Resume</span>
+      </a>
+      <a class="navbar-item" href="/files/C-R-A-F-T-Process.pdf">
+        <span class="icon">
+          <i class="fas fa-file-alt"></i>
+        </span>
+        <span>C-R-A-F-T Process</span>
+      </a>
+      <a class="navbar-item" href="/files/Reducing-Developer-Surprises-with-Intelligent-PR-Summaries.pdf">
+        <span class="icon">
+          <i class="fas fa-file-alt"></i>
+        </span>
+        <span>Work Example 1</span>
+      </a>
+      <a class="navbar-item" href="/files/From-Support-Tickets-to-Self-Sufficiency-AI-Powered-Liquid-Template-Editing.pdf">
+        <span class="icon">
+          <i class="fas fa-file-alt"></i>
+        </span>
+        <span>Work Example 2</span>
+      </a>
+      <a class="navbar-item" href="/files/Unifying-a-Fractured-Ticketing-Experience-From-Chaos-to-Cohesion.pdf">
+        <span class="icon">
+          <i class="fas fa-file-alt"></i>
+        </span>
+        <span>Work Example 3</span>
+      </a>
+      <!-- <a class="navbar-item" href="#portfolio">
+        <span class="icon">
+          <i class="fas fa-th-list"></i>
+        </span>
+        <span>Portfolio</span>
+      </a> -->
+      <!-- <a class="navbar-item" href="#contact">
+        <span class="icon">
+          <i class="fas fa-envelope"></i>
+        </span>
+        <span>Contact</span>
+      </a>-->
+    </div>
   </div>
 </nav>
-    <main class="main-container">
-  <header class="header">
-    <h1>Driving Innovation Through Robust Software Development</h1>
-  </header>
 
-  <div class="flex-container">
-    <section class="section">
-      <h2 class="section-header with-separator">Who I am</h2>
-      <p>Hi I'm Lovell!</p>
-      <p>
-        I'm someone who values introspection and finds wonder in the details
-        of everyday life.
-      </p>
-      <p>
-        I believe in the power of genuine human connection and approach
-        challenges with a thoughtful, curious mind.
-      </p>
-      <p>
-        I am committed to continuous grown both personally and
-        professionally.
-      </p>
-      <p>Let&#39;s connect!</p>
-
-      <div class="actions">
-        <a href="mailto:lovell.mcilwain@gmail.com" class="link">Contact</a>
-        <a href="https://linkedin.com/in/vmcilwain" class="link" target="_blank">LinkedIn</a>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2 class="section-header with-separator">What I do</h2>
-      <p>
-        Full-stack engineer with experience in Ruby on Rails, JavaScript
-        (React, ES6, jQuery), and SASS.
-      </p>
-      <p>
-        Proven track record in building scalable SaaS platforms, API
-        development, and optimizing system performance.
-      </p>
-      <p>
-        Experienced in integrating third-party services, leading
-        cross-functional collaboration, and mentoring developers.
-      </p>
-      <p>
-        Passionate about problem-solving, automation, and delivering
-        impactful solutions.
-      </p>
-
-      <div class="actions">
-        <a href="learn-more.html" class="link">About</a>
-        <a href="files/C-R-A-F-T-Process.pdf" class="link">My Process</a>
-      </div>
-    </section>
+    <section class="hero is-link is-fullheight is-fullheight-with-navbar">
+  <div class="hero-body">
+    <div class="container">Hello! I am
+      <h1 class="title is-1">
+        Lovell McIlwain
+      </h1>
+      <h2 class="subtitle is-3">
+        Full Stack Web Developer
+      </h2>
+    </div>
   </div>
-</main>
-    <footer class="footer">
-  <nav class="nav">
-    <div class="nav-content">
-      <p>&copy; 2025 Lovell McIlwain. All rights reserved.</p>
-      <ul class="nav-list">
-        <li class="nav-item">
-            <a href="mailto:mailto:lovell.mcilwain@gmail.com" class="link">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://linkedin.com/in/vmcilwain" class="link" target="_blank">LinkedIn</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://github.com/vmcilwain" class="link" target="_blank">Github</a>
-          </li>
-      </ul>
+</section>
+
+<section class="section" id="about">
+  <div class="section-heading">
+    <h3 class="title is-2">About Me</h3>
+    <h4 class="subtitle is-5">Driving Innovation Through Robust Software Development</h4>
+    <div class="container has-text-left">
+      <p>
+        Full-stack engineer with a strong background in building SaaS applications. 
+        With over <strong>9 years</strong> experience, a degree in <strong>Information Technology</strong>, and background in 
+        <strong>Systems Administration</strong>, I have experience in building applications for the web from the ground up. 
+        Looking for the opportunity to work with an organization that has growth potential, invests in their staff, is forward moving, and believes 
+        in gaining a competitive edge while giving back to the community.
+      </p>
+      <br />
+      <p>
+        My most recent experience is with Power Home Remodeling as a Full-Stack Engineer working primarily with <strong>Ruby on Rails</strong> and <strong>React</strong> to build and maintain internal tools and customer-facing applications for the Brand and Digital Marketing teams.
+      </p>
+      <br />
+      <p>
+        I have also been focusing on expanding my skills in <strong>Generative A.I.</strong> and <strong>DevOps</strong> to complement my existing expertise.
+      </p>
+    </div>
+  </div>
+
+  <div class="columns has-same-height is-gapless">
+    <div class="column">
+      <div class="card">
+        <div class="card-content">
+          <h3 class="title is-4">Profile</h3>
+
+          <div class="content">
+            <table class="table-profile">
+              <tr>
+                <th colspan="1"></th>
+                <th colspan="2"></th>
+              </tr>
+              <tr>
+                <td>Address:</td>
+                <td>Greenbelt, MD</td>
+              </tr>
+              <!--
+              <tr>
+                <td>Phone:</td>
+                <td>0123-456789</td>
+              </tr>
+              -->
+              <tr>
+                <td>Email:</td>
+                <td><a href="mailto:lovell.mcilwain@gmail.com">lovell.mcilwain@gmail.com</a></td>
+              </tr>
+            </table>
+          </div>
+          <br>
+          <div class="buttons has-addons is-centered">
+            <a href="https://www.github.com/vmcilwain" class="button is-link" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/vmcilwain" class="button is-link" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="/images/headshot.png" alt="Profile picture of Lovell McIlwain" />
+          </figure>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <div class="card-content skills-content">
+          <h3 class="title is-4">Skills</h3>
+          <div class="content">
+
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>Ruby on Rails:</strong>
+                    <br>
+                    <progress class="progress is-primary" value="90" max="100"></progress>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>React:</strong>
+                    <br>
+                    <progress class="progress is-primary" value="80" max="100"></progress>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>A.I.:</strong>
+                    <br>
+                    <progress class="progress is-primary" value="60" max="100"></progress>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>HTML5/CSS3</strong>
+                    <br>
+                    <progress class="progress is-primary" value="90" max="100"></progress>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>Databases</strong>
+                    <br>
+                    <progress class="progress is-primary" value="66" max="100"></progress>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>DevOps - Continuing to build Skill</strong>
+                    <br>
+                    <progress class="progress is-primary" value="50" max="100"></progress>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Skills tags -->
+  <!-- <br>
+        <div class="tags custom-tags">
+          <span class="tag is-light">Node.js</span><span class="tag is-light">Express.js</span><span class="tag is-light">VueJS</span><span
+            class="tag is-light">JavaScript</span><span class="tag is-light">HTML5</span><span class="tag is-light">Canvas</span><span
+            class="tag is-light">CSS3</span><span class="tag is-light">Bulma</span><span class="tag is-light">Bootstrap</span><span
+            class="tag is-light">jQuery</span><span class="tag is-light">Pug</span><span class="tag is-light">Stylus</span><span
+            class="tag is-light">SASS/SCSS</span><span class="tag is-light">Webpack</span><span class="tag is-light">Git</span><span
+            class="tag is-light">ASP.NET Web Forms</span><span class="tag is-light">MSSQL</span><span class="tag is-light">MongoDB</span><span
+            class="tag is-light">Apache Cordova</span><span class="tag is-light">Chrome Extensions</span>
+        </div> -->
+
+<section class="section" id="services">
+  <div class="section-heading">
+    <h3 class="title is-2">Services</h3>
+    <h4 class="subtitle is-5">What I can do for you</h4>
+  </div>
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="box">
+          <div class="content">
+            <h4 class="title is-5">Front End Web Development</h4>
+            Using the latest standards with HTML5/CSS3 along with Javascript, React, and Stimulus to create help create beautiful Front End applications
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="box">
+          <div class="content">
+            <h4 class="title is-5">Back End Web Development</h4>
+            Developing Back End applications, services, and APIs using ActivRecord, SQL, and Mongo DB.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <div class="box">
+          <div class="content">
+            <h4 class="title is-5">DevOps</h4>
+            While still developing skill in this area, I can assist with set up and maintainenance of CI/CD pipelines using Kubernetes, Terraform, Shell Scripts, GitHub Actions or Jenkins.
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="box">
+          <div class="content">
+            <h4 class="title is-5">Generative A.I.</h4>
+            While not actively doing any projects in this area, I understand the concepts of using A.I. tools to help with code generation, debugging, and chat assistance.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="resume">
+  <div class="section-heading">
+    <h3 class="title is-2">Resume</h3>
+    <h4 class="subtitle is-5">More about professional past</h4>
+
+    <a href="/files/resume.pdf" class="button is-link is-medium">
+      <span class="icon">
+        <i class="fas fa-file-alt"></i>
+      </span>
+      <span>Download My Resume</span>
+    </a>
+  </div>
+</section>
+
+<!-- <section class="section">
+  <nav class="level">
+    <div class="level-item has-text-centered">
+      <div>
+        <p class="heading">Tweets</p>
+        <p class="title">3,456</p>
+      </div>
+    </div>
+    <div class="level-item has-text-centered">
+      <div>
+        <p class="heading">Following</p>
+        <p class="title">123</p>
+      </div>
+    </div>
+    <div class="level-item has-text-centered">
+      <div>
+        <p class="heading">Followers</p>
+        <p class="title">456K</p>
+      </div>
+    </div>
+    <div class="level-item has-text-centered">
+      <div>
+        <p class="heading">Likes</p>
+        <p class="title">789</p>
+      </div>
     </div>
   </nav>
+</section> -->
+
+
+    <footer class="footer">
+  <div class="section-heading">
+    <p><strong>&copy; 2025 Lovell McIlwain. All rights reserved.</strong></p>
+    <p>
+      <a href="mailto:mailto:lovell.mcilwain@gmail.com">Contact</a> |
+      <a href="https://www.linkedin.com/in/vmcilwain" target="_blank">LinkedIn</a> |
+      <a href="https://www.github.com/vmcilwain" target="_blank">Github</a>
+    </p>
+  </div>
 </footer>
+
   </body>
 </html>
