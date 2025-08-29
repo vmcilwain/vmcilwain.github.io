@@ -2,58 +2,10 @@
 title: Welcome to Lovel McIlwain
 ---
 
-<main class="main-container">
-  <header class="header">
-    <h1>Driving Innovation Through Robust Software Development</h1>
-  </header>
-
-  <div class="flex-container">
-    <section class="section">
-      <h2 class="section-header with-separator">Who I am</h2>
-      <p>Hi I'm Lovell!</p>
-      <p>
-        I'm someone who values introspection and finds wonder in the details
-        of everyday life.
-      </p>
-      <p>
-        I believe in the power of genuine human connection and approach
-        challenges with a thoughtful, curious mind.
-      </p>
-      <p>
-        I am committed to continuous grown both personally and
-        professionally.
-      </p>
-      <p>Let&#39;s connect!</p>
-
-      <div class="actions">
-        <%= mail_to "lovell.mcilwain@gmail.com", "Contact", class: :link %>
-        <%= link_to :LinkedIn, "https://linkedin.com/in/vmcilwain", class: :link, target: "_blank" %>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2 class="section-header with-separator">What I do</h2>
-      <p>
-        Full-stack engineer with experience in Ruby on Rails, JavaScript
-        (React, ES6, jQuery), and SASS.
-      </p>
-      <p>
-        Proven track record in building scalable SaaS platforms, API
-        development, and optimizing system performance.
-      </p>
-      <p>
-        Experienced in integrating third-party services, leading
-        cross-functional collaboration, and mentoring developers.
-      </p>
-      <p>
-        Passionate about problem-solving, automation, and delivering
-        impactful solutions.
-      </p>
-
-      <div class="actions">
-        <%= link_to "About", "/learn-more.html", class: :link, relative: true %>
-        <%= link_to "My Process", "/files/C-R-A-F-T-Process.pdf", class: :link, relative: true %>
-      </div>
-    </section>
-  </div>
-</main>
+<%= partial "header" %>
+<%= partial "about" %>
+<%= partial "services" %>
+<%= partial "resume" %>
+<%= partial "portfolio" %>
+<%= partial "achievement" %>
+<%= partial "contact" %>

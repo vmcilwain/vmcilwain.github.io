@@ -1,45 +1,47 @@
-<nav class="nav">
-  <div class="nav-top">
-    <button class="hamburger-menu" aria-label="Toggle menu">
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-    </button>
+<nav class="navbar is-link is-fixed-top">
+  <div class="navbar-brand">
+    <div
+      class="navbar-burger burger"
+      data-target="navbarExampleTransparentExample"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 
-  <div class="nav-content">
-    <%= image_tag "vell2-headshot.jpg", alt: "Image of Lovell McIlwain", class: "rounded-image" %>
-    <p class="nav-title">Lovell McIlwain</p>
-    <ul class="nav-list">
-      <li class="nav-item"><%= link_to :Home, "/index.html", class: :link, relative: true %></li>
-      <li class="nav-item">
-        <%= link_to "About", "/learn-more.html", class: :link, relative: true %>
-      </li>
-      <li class="nav-item">
-        <%= link_to :Resume, "/files/resume.pdf", class: :link, relative: true %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Example 1", "/files/Reducing-Developer-Surprises-with-Intelligent-PR-Summaries.pdf", class: :link, title: "Reducing Developer Surprises with Intelligent PR Summaries" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Example 2", "/files/From-Support-Tickets-to-Self-Sufficiency-AI-Powered-Liquid-Template-Editing.pdf", class: :link, title: "From Support Tickets to Self Sufficiency: AI Powered Liquid Template Editing" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Example 3", "/files/Unifying-a-Fractured-Ticketing-Experience-From-Chaos-to-Cohesion.pdf", class: :link, title: "Unifying a Fractured Ticketing Experience: From Chaos to Cohesion" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "My Process", "/files/C-R-A-F-T-Process.pdf", class: :link, relative: true %>
-      </li>
-    </ul>
-
-    <ul class="slogan">
-      <li class="list-item">Innovative</li>
-      <li class="list-item">Collaborative</li>
-      <li class="list-item">Adaptable</li>
-    </ul>
-
-    <p class="work-status">
-      Status: <span class="unemployed">#opentowork</span>
-    </p>
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-end">
+      <a class="navbar-item" href="#about">
+        <span class="icon">
+          <i class="fas fa-info"></i>
+        </span>
+        <span>About</span>
+      </a>
+      <a class="navbar-item" href="#services">
+        <span class="icon">
+          <i class="fas fa-bars"></i>
+        </span>
+        <span>Services</span>
+      </a>
+      <a class="navbar-item" href="#resume">
+        <span class="icon">
+          <i class="fas fa-file-alt"></i>
+        </span>
+        <span>Resume</span>
+      </a>
+      <a class="navbar-item" href="#portfolio">
+        <span class="icon">
+          <i class="fas fa-th-list"></i>
+        </span>
+        <span>Portfolio</span>
+      </a>
+      <a class="navbar-item" href="#contact">
+        <span class="icon">
+          <i class="fas fa-envelope"></i>
+        </span>
+        <span>Contact</span>
+      </a>
+    </div>
   </div>
 </nav>
